@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+body{
+
+    background-color: darkseagreen;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 20px;text-align: center;
+}
+h1{
+    color: royalblue;font-family:monospace;
+    text-align: center;
+}
+h2{
+    color: brown;font-family: monospace;
+}
+
+p{
+    text-align: center;
+}
+
+a{
+    bottom: initial a;
+}

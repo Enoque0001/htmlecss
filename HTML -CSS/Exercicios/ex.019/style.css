@@ -1,0 +1,35 @@
+body {
+    font: 12pt Arial white;
+    background-image: linear-gradient(black,gray); 
+}
+
+p { /* por padrão, todos os parágrafos desse site serão justificados */
+    text-align: justify;
+    text-indent: 20pt; /* todos terão aquele recuo que todo parágrafo tem no início */
+}
+
+p.meio { /* a não ser os que possuem a classe "meio", que ficarão centralizados */
+    text-align: center;
+    font-size: x-large;
+}
+
+p.dir { /* aqueles que tiverem a classe "dir", ficarão à direita */
+    text-align: left;
+    background-color: aquamarine;
+}
+
+p.especial { /* e os que forem da classe "especial", terão uma cor especial de fundo */
+    background-color: rgba(242, 255, 0, 0.468);
+}
+h2{
+    font-family: monospace;
+    background-color: yellowgreen;
+}
+h1{
+    font-family: sans-serif;background-color: turquoise;
+    font-size: x-large;
+}
+#principal{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;background-image: linear-gradient(turquoise, yellowgreen);
+    text-align: center;
+}

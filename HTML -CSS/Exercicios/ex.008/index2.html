@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sua chance</title>
+  <h1>Sua vela não apagou </h1>
+  <style>
+    body {
+      background-color: #111;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      height: 100vh;
+      font-family: sans-serif;
+      color: #fff;
+    }
+
+    .vela {
+      position: relative;
+      width: 40px;
+      height: 100px;
+      background: linear-gradient(to bottom, #ffd700, #b8860b);
+      border-radius: 10px;
+      box-shadow: 0 0 40px rgba(255, 215, 0, 0.6);
+    }
+
+    .chama {
+      position: absolute;
+      top: -30px;
+      left: 50%;
+      width: 20px;
+      height: 30px;
+      background: radial-gradient(circle at 50% 50%, #ffa500, #ff4500);
+      border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+      transform: translateX(-50%) scale(1);
+      animation: chamaDanca 1s infinite ease-in-out;
+    }
+
+    @keyframes chamaDanca {
+      0%, 100% {
+        transform: translateX(-50%) scale(1);
+      }
+      50% {
+        transform: translateX(-50%) scale(1.2);
+      }
+    }
+
+    .pavio {
+      position: absolute;
+      top: -10px;
+      left: 50%;
+      width: 4px;
+      height: 10px;
+      background-color: #333;
+      transform: translateX(-50%);
+      animation: queimaPavio 10s linear forwards;
+    }
+
+    @keyframes queimaPavio {
+      0% { height: 10px; }
+      100% { height: 0; }
+    }
+
+    button {
+      margin-top: 30px;
+      background-color: #333;
+      color: gold;
+      border: 2px solid gold;
+      padding: 10px 20px;
+      font-size: 16px;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background-color: gold;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <div class="vela">
+    <div class="pavio" id="pavio"></div>
+    <div class="chama" id="chama"></div>
+  </div>
+
+  <button onclick="acenderVela()">Reacender Vela</button>
+
+  <script>
+    function acenderVela() {
+      const pavio = document.getElementById('pavio');
+      pavio.style.animation = 'none';
+      pavio.offsetHeight;
+      pavio.style.animation = 'queimaPavio 10s linear forwards';
+    }
+  </script>
+</body>
+</html>
