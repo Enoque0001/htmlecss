@@ -95,16 +95,14 @@ footer{
     padding: 10px;
    
 }
-#imgfooter{
-    background-image:url('https://i.pinimg.com/736x/c5/fd/6d/c5fd6df96a4149d48337e40b91e3906f.jpg');
+#imgfooter  {
+    background-image:url('https://i.pinimg.com/736x/55/ba/c7/55bac743b125cf6f654edfbaf46a1916.jpg');
     background-size: cover;
     background-attachment: fixed;
+    
 }
 footer>h1{
     text-align:center ;
     text-shadow: 2px 2px 0 black;
     background-color: rgba(0, 0, 0, 0.623);
-
-}footer>a{
-    color: white;
 }
