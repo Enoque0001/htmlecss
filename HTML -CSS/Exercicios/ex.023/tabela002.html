@@ -4,6 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anatomias para tabelas grandes</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            width: 600px;
+            border-collapse: collapse;
+        }
+        td, th{
+            border:1px solid rgba(0, 0, 0, 0.342);
+            padding: 10px;
+        }
+        thead{}
+        tr{
+            background-color: rgb(255, 246, 235);
+        }
+        tr.head{
+            background-color: rgb(143, 198, 252);
+        }
+    </style>
 </head>
 <body>
     <h1>Uso de tabelas grandes</h1>
@@ -16,6 +36,51 @@
             TR,TD,TH
         TFOOT
             TR,TD,TH    
-    -->
+    -->         <h1>População das regiões do Brasil</h1>
+            <table>
+                <thead>
+                    <tr class="head"><th>Região</th>
+                        <th>Estado</th>
+                        <th>Municípios</th>
+                        <th>população</th>
+                        
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Norte</strong></td>
+                        <td> <img src = "imagens/Bandeiradoacre.svg.webp" alt="Acre.SVG"/><a href="https://pt.wikipedia.org/wiki/Acre"class="mw-file-element">Acre</a><br>
+                            <img src = "imagens/Bandeira_do_Amapá.svg.webp" alt="amapá.SVG"/><a href="https://pt.wikipedia.org/wiki/Amap%C3%A1">Amapá</a><br>
+                            <img src = "imagens/Bandeira_do_Amazonas.svg.webp" alt="Amazonas.SVG"/><a href="https://pt.wikipedia.org/wiki/Amazonas">Amazonas</a><br>
+                            <img src = "imagens/Bandeira_do_Pará.svg.webp" alt="Pará.SVG"/><a href="https://pt.wikipedia.org/wiki/Par%C3%A1">Pará</a> <br>
+                            <img src = "imagens/Bandeira_de_Rondônia.svg.webp" alt="Rondônia.SVG"/><a href="https://pt.wikipedia.org/wiki/Rond%C3%B4nia">Rondônia</a><br>
+                            <img src = "imagens/Bandeira_de_Roraima.svg.webp" alt="Roraima.SVG"/><a href="https://pt.wikipedia.org/wiki/Roraima">Roraima</a> <br>
+                            <img src = "imagens/Bandeira_do_Tocantins.svg.webp" alt="Tocantins.SVG"/><a href="https://pt.wikipedia.org/wiki/Tocantins">Tocantins</a> <br></td>
+                            <td>450</td>
+                            <td>17 354 884</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Nordeste</strong></td>
+                        <td> Alagoas <br>
+                            Bahia Bahia <br>
+                             Ceará <br>
+                             Maranhão <br>
+                             Paraíba <br>
+                             Pernambuco <br>
+                             Piauí <br>
+                             Rio Grande do Norte <br>
+                             Sergipe <br></td>
+                             <td>1 793</td>
+                             <td>54 658 515</td>
+                    </tr>
+                    <tr></tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th>Total de habitantes</th>
+                        <td>0000</td>
+                    </tr>
+                </tfoot>
+            </table>
 </body>
 </html>
