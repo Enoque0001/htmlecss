@@ -4,8 +4,346 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercicio de Tabela</title>
+    <style>
+        body{
+            font-family: 'Courier New', Courier, monospace;
+            background-color: gray;
+        }
+        table{
+            width: 500px;
+            border-collapse: collapse;
+            box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.664);
+            margin: auto;
+            margin-top: 10%;
+        }
+        caption{
+            font-size: 1.3em;
+            font-weight: bolder;
+            padding: 8px;
+        }
+        .prof{
+            text-align: right;
+        }
+        th,td{
+            border: 0.5px solid rgba(255, 255, 255, 0.171);
+            padding: 8px;
+            color: white;
+            border-radius: 2px;
+        }
+        col.cnome{
+            background-image: url(https://i.pinimg.com/736x/d6/68/db/d668dba806d82b52996fbaa4307d2928.jpg);
+            background-size: cover;
+        }
+
+        col.csexo{
+            background-image: url(https://i.pinimg.com/736x/02/a4/21/02a42198faff8e2705d6b406533bd345.jpg);
+            background-size: cover;
+        }
+
+        col.cidade{
+            background-image: url(https://i.pinimg.com/736x/15/1e/06/151e065ff3039d3ccf844228311f660a.jpg);
+            background-size: cover;
+        }
+        col.prof{
+            background-image: url(https://i.pinimg.com/736x/bd/7a/fc/bd7afce74c9480574adca9042067c838.jpg);
+            background-size: cover;
+        }
+        div#container{
+            overflow-x: auto;
+            width: ;
+        }
+    </style>
 </head>
 <body>
-    
+    <h1>Treinando Overflow </h1>
+    <p>Aqui apredemos a criar, tabelas grande e pequenas, marca dagua ou imagens, responcividade e barra de rolagem em tabelas grandes em altera o texto ou a conteudo principal.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil quia laboriosam quasi consectetur, atque fugit tempore dolores est! Iste sequi nostrum adipisci quas iure dignissimos expedita minima error incidunt omnis?
+    </p>
+    <table>
+        <colgroup>
+            <col class="cnome">
+            <col class="csexo">
+            <col class="cidade" span="2">
+
+        </colgroup>
+        <caption>Cadastro</caption>
+        <tr>
+            <th scope="col">Nome</th>
+            <th hscope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissão</th>
+        </tr>
+        <tr>
+            <td>Ana Maria</td>
+            <td>F</td>
+            <td>25</td>
+            <td class="prof">Jornalista</td>
+        </tr>
+        <tr>
+            <td>Cláudio</td>
+            <td>M</td>
+            <td>42</td>
+            <td class="prof">Professor</td>
+        </tr>
+        <tr>
+            <td>Gustavo</td>
+            <td>M</td>
+            <td>42</td>
+            <td class="prof">Programador</td>
+        </tr>
+        <tr>
+            <td>Hélio</td>
+            <td>M</td>
+            <td>19</td>
+            <td class="prof">Vendedor</td>
+        </tr>
+        <tr>
+            <td>Maria</td>
+            <td>F</td>
+            <td>35</td>
+            <td class="prof">Médica</td>
+        </tr>
+        <tr>
+            <td>Otávio</td>
+            <td>M</td>
+            <td>55</td>
+            <td class="prof">Nutricionista</td>
+        </tr>
+
+        
+    </table>
+    <div id="container">
+        <table >
+            <colgroup>
+                <col class="cnome">
+                <col class="csexo">
+                <col class="cidade" span="2">
+            </colgroup>
+            <caption>Cadastro</caption>
+            <tr>
+                <th scope="col">Nome</th>
+                <th hscope="col">Sexo</th>
+                <th scope="col">Idade</th>
+                <th scope="col">Profissão</th>
+            </tr>
+            <tr>
+                <td>Ana Maria</td>
+                <td>F</td>
+                <td>25</td>
+                <td class="prof">Jornalista</td>
+            </tr>
+            <tr>
+                <td>Cláudio</td>
+                <td>M</td>
+                <td>42</td>
+                <td class="prof">Professor</td>
+            </tr>
+            <tr>
+                <td>Gustavo</td>
+                <td>M</td>
+                <td>42</td>
+                <td class="prof">Programador</td>
+            </tr>
+            <tr>
+                <td>Hélio</td>
+                <td>M</td>
+                <td>19</td>
+                <td class="prof">Vendedor</td>
+            </tr>
+            <tr>
+                <td>Maria</td>
+                <td>F</td>
+                <td>35</td>
+                <td class="prof">Médica</td>
+            </tr>
+            <tr>
+                <td>Otávio</td>
+                <td>M</td>
+                <td>55</td>
+                <td class="prof">Nutricionista</td>
+            </tr>
+            <tr>
+                <th scope="col">Nome</th>
+                <th hscope="col">Sexo</th>
+                <th scope="col">Idade</th>
+                <th scope="col">Profissão</th>
+            </tr>
+            <tr>
+                <td>Ana Maria</td>
+                <td>F</td>
+                <td>25</td>
+                <td class="prof">Jornalista</td>
+            </tr>
+            <tr>
+                <td>Cláudio</td>
+                <td>M</td>
+                <td>42</td>
+                <td class="prof">Professor</td>
+            </tr>
+            <tr>
+                <td>Gustavo</td>
+                <td>M</td>
+                <td>42</td>
+                <td class="prof">Programador</td>
+            </tr>
+            <tr>
+                <td>Hélio</td>
+                <td>M</td>
+                <td>19</td>
+                <td class="prof">Vendedor</td>
+            </tr>
+            <tr>
+                <td>Maria</td>
+                <td>F</td>
+                <td>35</td>
+                <td class="prof">Médica</td>
+            </tr>
+            <tr>
+                <td>Otávio</td>
+                <td>M</td>
+                <td>55</td>
+                <td class="prof">Nutricionista</td>
+            </tr>
+            <tr>
+                <th scope="col">Nome</th>
+                <th hscope="col">Sexo</th>
+                <th scope="col">Idade</th>
+                <th scope="col">Profissão</th>
+            </tr>
+            <tr>
+                <td>Ana Maria</td>
+                <td>F</td>
+                <td>25</td>
+                <td class="prof">Jornalista</td>
+            </tr>
+            <tr>
+                <td>Cláudio</td>
+                <td>M</td>
+                <td>42</td>
+                <td class="prof">Professor</td>
+            </tr>
+            <tr>
+                <td>Gustavo</td>
+                <td>M</td>
+                <td>42</td>
+                <td class="prof">Programador</td>
+            </tr>
+            <tr>
+                <td>Hélio</td>
+                <td>M</td>
+                <td>19</td>
+                <td class="prof">Vendedor</td>
+            </tr>
+            <tr>
+                <td>Maria</td>
+                <td>F</td>
+                <td>35</td>
+                <td class="prof">Médica</td>
+            </tr>
+            <tr>
+                <td>Otávio</td>
+                <td>M</td>
+                <td>55</td>
+                <td class="prof">Nutricionista</td>
+            </tr>
+            <tr>
+                <th scope="col">Nome</th>
+                <th hscope="col">Sexo</th>
+                <th scope="col">Idade</th>
+                <th scope="col">Profissão</th>
+            </tr>
+            <tr>
+                <td>Ana Maria</td>
+                <td>F</td>
+                <td>25</td>
+                <td class="prof">Jornalista</td>
+            </tr>
+            <tr>
+                <td>Cláudio</td>
+                <td>M</td>
+                <td>42</td>
+                <td class="prof">Professor</td>
+            </tr>
+            <tr>
+                <td>Gustavo</td>
+                <td>M</td>
+                <td>42</td>
+                <td class="prof">Programador</td>
+            </tr>
+            <tr>
+                <td>Hélio</td>
+                <td>M</td>
+                <td>19</td>
+                <td class="prof">Vendedor</td>
+            </tr>
+            <tr>
+                <td>Maria</td>
+                <td>F</td>
+                <td>35</td>
+                <td class="prof">Médica</td>
+            </tr>
+            <tr>
+                <td>Otávio</td>
+                <td>M</td>
+                <td>55</td>
+                <td class="prof">Nutricionista</td>
+            </tr>
+        
+        </table>
+    </div>
+
+    <div id="container">
+        <table>
+            <colgroup>
+                <col class="cnome">
+                <col class="csexo">
+                <col class="cidade" span="2">
+            </colgroup>
+            <caption>Cadastro</caption>
+            <tr>
+                <th scope="col">Nome</th>
+                <th hscope="col">Sexo</th>
+                <th scope="col">Idade</th>
+                <th scope="col">Profissão</th>
+            </tr>
+            <tr>
+                <td>Ana Maria</td>
+                <td>F</td>
+                <td>25</td>
+                <td class="prof">Jornalista</td>
+            </tr>
+            <tr>
+                <td>Cláudio</td>
+                <td>M</td>
+                <td>42</td>
+                <td class="prof">Professor</td>
+            </tr>
+            <tr>
+                <td>Gustavo</td>
+                <td>M</td>
+                <td>42</td>
+                <td class="prof">Programador</td>
+            </tr>
+            <tr>
+                <td>Hélio</td>
+                <td>M</td>
+                <td>19</td>
+                <td class="prof">Vendedor</td>
+            </tr>
+            <tr>
+                <td>Maria</td>
+                <td>F</td>
+                <td>35</td>
+                <td class="prof">Médica</td>
+            </tr>
+            <tr>
+                <td>Otávio</td>
+                <td>M</td>
+                <td>55</td>
+                <td class="prof">Nutricionista</td>
+            </tr>
+        
+        </table>
+    </div>
 </body>
 </html>
