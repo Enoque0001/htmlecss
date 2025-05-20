@@ -3,16 +3,36 @@
 /*ESTILOS PARA TELA*/     
 
 
-*{
+* {
     margin: 0px;
     padding: 0px;
 }
 
-html{
+html {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 10em;
+    font-size: 1em;
 }
 
-header{
-    background-color: rgba(127, 255, 212, 0.897);   
+header {
+    background-color: rgba(127, 255, 212, 0.452);   
+}
+header> h1{
+    text-align: center;
+}
+menu ul{
+    list-style-type: none;
+    background-color: antiquewhite;
+}
+menu li{
+    background-color: rgba(0, 0, 0, 0.322);
+    color: white;
+    display: inline-block;
+    padding: 10px;
+
+}
+
+article{
+    width: 600px;
+    display: block;
+    margin: auto;
 }
