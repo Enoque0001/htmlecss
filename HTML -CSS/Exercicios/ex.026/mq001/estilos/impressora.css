@@ -1,0 +1,19 @@
+@charset "UTF-8";
+/*TELA IMPRESSORA*/ 
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5em;
+    
+}
+menu{
+    display: none;
+
+}
+article::after{
+    content: 'Este arquivo é um exemplo de aula do guanabara.21/05/25';
+}
